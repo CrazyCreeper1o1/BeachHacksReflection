@@ -10,7 +10,16 @@ public class NextLevel : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Scr_PlayerCamera>() != null)
         {
-            SceneManager.LoadScene("Level_" + TargetLevel);
+            TimerManager.main.AddTask(LoadScene, 1.1f);
+
+            localFade.StartFadeOut();
         }
+    }
+
+    public FadeScreen localFade;
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene("Level_"+TargetLevel);
     }
 }

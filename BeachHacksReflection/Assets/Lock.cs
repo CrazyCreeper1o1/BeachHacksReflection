@@ -41,6 +41,7 @@ namespace Doors
         public void UnlockLock()
         {
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            GetComponent<Rigidbody>().velocity = transform.forward * 5;
 
             locked = false;
         }
