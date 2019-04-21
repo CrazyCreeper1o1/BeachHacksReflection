@@ -437,7 +437,7 @@ MonoBehaviour:
   ScrollScale: 0.25
   HoldDistanceMin: 1
   HoldDistanceMax: 3
-  HoldStrength: 10
+  HoldStrength: 15
   HoldElasticity: 1
 --- !u!114 &4545462869042807571
 MonoBehaviour:

@@ -13,7 +13,13 @@ public class MirroredDoor : MonoBehaviour
 
     private void Update()
     {
-        SonDoor.Locked = ParentDoor.Locked;
-        SonLock.Locked = ParentLock.Locked;
+        if (!SonLock.Locked || !ParentLock)
+        {
+            SonLock.Locked = false;
+            ParentLock.Locked = false;
+        }
+
+  //      SonDoor.Locked = ParentDoor.Locked;
+//        SonLock.Locked = ParentLock.Locked;
     }
 }
