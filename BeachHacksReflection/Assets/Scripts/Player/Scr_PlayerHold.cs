@@ -10,6 +10,9 @@ public class Scr_PlayerHold : MonoBehaviour
     public bool ObjectHeld = false;
 
     public float HoldDistance = 1f;
+    public float ScrollScale = 0.25f;
+    public float HoldDistanceMin = 1f;
+    public float HoldDistanceMax = 3f;
 
     private void Start()
     {
@@ -28,6 +31,8 @@ public class Scr_PlayerHold : MonoBehaviour
             ObjectHeld = false;
         }
 
+        HoldDistance = Mathf.Clamp(HoldDistance + (Input.mouseScrollDelta.y * ScrollScale), HoldDistanceMin, HoldDistanceMax);
+
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("CLICKED!");
@@ -44,8 +49,17 @@ public class Scr_PlayerHold : MonoBehaviour
 
         if (ObjectHeld)
         {
-            HeldObject.transform.position = PlayerCamera.transform.position+(PlayerCamera.transform.forward*HoldDistance);
-            HeldObject.transform.rotation = PlayerCamera.transform.rotation*Quaternion.Euler(270,90,0);
+            var rb = HeldObject.GetComponent<Rigidbody>();
+            if (rb)
+            {
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                rb.MovePosition(PlayerCamera.transform.position + (PlayerCamera.transform.forward * HoldDistance));
+                rb.MoveRotation(PlayerCamera.transform.rotation * Quaternion.Euler(270, 90, 0));
+            }
+
+           // HeldObject.transform.position = PlayerCamera.transform.position + (PlayerCamera.transform.forward * HoldDistance));
+            //HeldObject.transform.rotation = PlayerCamera.transform.rotation*Quaternion.Euler(270,90,0);
             //HeldObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             //HeldObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
@@ -75,7 +89,7 @@ public class Scr_PlayerHold : MonoBehaviour
                     var rb = HeldObject.GetComponent<Rigidbody>();
                     if(rb)
                     {
-                        rb.isKinematic = true;
+                        rb.useGravity = false;
                     }
                 }
                 else
@@ -95,7 +109,7 @@ public class Scr_PlayerHold : MonoBehaviour
         var rb = HeldObject.GetComponent<Rigidbody>();
         if (rb)
         {
-            rb.isKinematic = false;
+            rb.useGravity = true;
         }
         ObjectHeld = false;
         HeldObject = null;

@@ -8,7 +8,8 @@ public class Scr_Item : MonoBehaviour
     {
         Key,
         Block,
-        Mirror
+        Mirror,
+        Bunny
     }
     public ItemList ItemID;
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083449214}
   - component: {fileID: 1083449215}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8687709736353176669}
   - component: {fileID: 1830729762447757674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 1187128532919416126}
   - component: {fileID: 6997250622175407432}
   - component: {fileID: 8626731225005758491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6291963016961963514}
   - component: {fileID: 6291963016961963515}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 1237843857564441506}
   - component: {fileID: 2441964355396313584}
   - component: {fileID: 4545462869042807571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeldObject: {fileID: 0}
   ObjectHeld: 0
-  HoldDistance: 1
+  HoldDistance: 3
 --- !u!114 &4545462869042807571
 MonoBehaviour:
   m_ObjectHideFlags: 0

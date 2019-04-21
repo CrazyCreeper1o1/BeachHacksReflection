@@ -16,12 +16,12 @@ TagManager:
   - Locked
   - PlayerDetection
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MirrorWall
+  - RedObject
+  - GreenObject
+  - YellowGhost
+  - YellowFake
+  - RedGhost
   - 
   - 
   - 
