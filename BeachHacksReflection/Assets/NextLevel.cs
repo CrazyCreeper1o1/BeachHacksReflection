@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     public int TargetLevel=1;
+    public string NextScene;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Scr_PlayerCamera>() != null)
@@ -20,6 +21,6 @@ public class NextLevel : MonoBehaviour
 
     void LoadScene()
     {
-        SceneManager.LoadScene("Level_"+TargetLevel);
+        SceneManager.LoadScene(NextScene);
     }
 }

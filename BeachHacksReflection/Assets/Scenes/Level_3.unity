@@ -2531,6 +2531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetLevel: 1
+  NextScene: Level_1-1
   localFade: {fileID: 1076813623}
 --- !u!1 &1804623727
 GameObject:
