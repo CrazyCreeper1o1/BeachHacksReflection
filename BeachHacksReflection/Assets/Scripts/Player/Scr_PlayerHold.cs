@@ -58,12 +58,12 @@ public class Scr_PlayerHold : MonoBehaviour
     void GrabObject()
     {
         Debug.Log("Grabbing");
-        Ray CameraDirection = new Ray(PlayerCamera.transform.position,PlayerCamera.transform.position + PlayerCamera.transform.forward*5f);
+        Ray CameraDirection = new Ray(PlayerCamera.transform.position, PlayerCamera.transform.forward);
         RaycastHit[] hitInfo;
         hitInfo = Physics.RaycastAll(CameraDirection);
         if (hitInfo.Length>0)
         {
-            Debug.DrawRay(PlayerCamera.transform.position, PlayerCamera.transform.position + PlayerCamera.transform.forward * 5f, Color.red, 1f);
+            Debug.DrawLine(PlayerCamera.transform.position, PlayerCamera.transform.position + PlayerCamera.transform.forward * 5f, Color.red, 1f);
             foreach (var hit in hitInfo)
             {
                 Debug.Log(hit.transform.gameObject.name);
