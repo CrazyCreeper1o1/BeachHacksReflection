@@ -20,7 +20,7 @@ TagManager:
   - RedObject
   - GreenObject
   - YellowGhost
-  - YellowFake
+  - FakeObject
   - RedGhost
   - 
   - 

@@ -432,6 +432,11 @@ MonoBehaviour:
   HeldObject: {fileID: 0}
   ObjectHeld: 0
   HoldDistance: 3
+  ScrollScale: 0.25
+  HoldDistanceMin: 1
+  HoldDistanceMax: 3
+  HoldStrength: 10
+  HoldElasticity: 1
 --- !u!114 &4545462869042807571
 MonoBehaviour:
   m_ObjectHideFlags: 0
