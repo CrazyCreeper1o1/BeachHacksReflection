@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    public int TargetLevel=1;
+    public string TargetLevel="1";
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Scr_PlayerCamera>() != null)
