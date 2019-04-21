@@ -45,7 +45,7 @@ public class Scr_PlayerHold : MonoBehaviour
         if (ObjectHeld)
         {
             HeldObject.transform.position = PlayerCamera.transform.position+(PlayerCamera.transform.forward*HoldDistance);
-            HeldObject.transform.rotation = PlayerCamera.transform.rotation;
+            HeldObject.transform.rotation = PlayerCamera.transform.rotation*Quaternion.Euler(270,90,0);
             //HeldObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             //HeldObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }

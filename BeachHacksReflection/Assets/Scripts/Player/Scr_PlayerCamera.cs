@@ -17,6 +17,8 @@ public class Scr_PlayerCamera : MonoBehaviour
     {
         PlayerCamera = GetComponentInChildren<Camera>();
         PlayerTransform = transform.Find("Body");
+        CameraX = PlayerCamera.transform.rotation.eulerAngles.x;
+        CameraY = PlayerCamera.transform.rotation.eulerAngles.y;
     }
 
     private void Update()
