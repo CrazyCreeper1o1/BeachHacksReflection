@@ -494,8 +494,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369282303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 3.67, z: 3.17}
-  m_LocalScale: {x: 5, y: -6.51315, z: 2}
+  m_LocalPosition: {x: -10, y: 2.724, z: 3.401}
+  m_LocalScale: {x: 5, y: -4.6219397, z: 0.8654401}
   m_Children: []
   m_Father: {fileID: 412479668}
   m_RootOrder: 10
@@ -1632,8 +1632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121856488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 3.67, z: -3.65}
-  m_LocalScale: {x: 5, y: 3.5, z: 2}
+  m_LocalPosition: {x: -10, y: 3.67, z: -3.42}
+  m_LocalScale: {x: 5, y: 3.5, z: 0.82421577}
   m_Children: []
   m_Father: {fileID: 412479668}
   m_RootOrder: 11
@@ -2038,6 +2038,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24bd18ec06f8ba943bd523550f09b98e, type: 3}
+--- !u!114 &1507331359 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5588232647272018508, guid: 24bd18ec06f8ba943bd523550f09b98e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1507331358}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cd8ca2d88251545b1d94146cbe3c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1527841354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,8 +2629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetLevel: 0-3
-  NextScene: Level_0-3
-  localFade: {fileID: 0}
+  NextScene: Level_0-1
+  localFade: {fileID: 1507331359}
 --- !u!65 &2014373774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2716,7 +2728,7 @@ PrefabInstance:
     - target: {fileID: 8953539732510783184, guid: 758dd84d98d333a4fbc64ae5e25580b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.04
       objectReference: {fileID: 0}
     - target: {fileID: 8953539732510783184, guid: 758dd84d98d333a4fbc64ae5e25580b6,
         type: 3}

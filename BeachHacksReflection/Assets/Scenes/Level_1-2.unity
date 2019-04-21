@@ -1752,11 +1752,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorframe
       objectReference: {fileID: 0}
-    - target: {fileID: -6054058774237248251, guid: 51556eaae17006142b192cad67125240,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 63908f30fae019f449575a0248eea18b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 51556eaae17006142b192cad67125240,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1812,12 +1807,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -1212445537685685361, guid: 51556eaae17006142b192cad67125240,
+    - target: {fileID: 1711277887553122256, guid: 51556eaae17006142b192cad67125240,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 44b9c5e9b89564f4aa7862ecda185843, type: 2}
-    - target: {fileID: 1711277887553122256, guid: 51556eaae17006142b192cad67125240,
+      objectReference: {fileID: 2100000, guid: 63908f30fae019f449575a0248eea18b, type: 2}
+    - target: {fileID: -6054058774237248251, guid: 51556eaae17006142b192cad67125240,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1832,6 +1827,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 99c1b9765589a2a479241f3f9701e684, type: 2}
+    - target: {fileID: -1212445537685685361, guid: 51556eaae17006142b192cad67125240,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44b9c5e9b89564f4aa7862ecda185843, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51556eaae17006142b192cad67125240, type: 3}
 --- !u!1 &1271557265
@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetLevel: Level_1-3
-  NextScene: SandBox
+  NextScene: Level_1-3
   localFade: {fileID: 1488520803}
 --- !u!65 &1854962844
 BoxCollider:
