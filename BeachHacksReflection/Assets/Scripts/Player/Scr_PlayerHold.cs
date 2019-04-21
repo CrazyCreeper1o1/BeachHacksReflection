@@ -90,7 +90,7 @@ public class Scr_PlayerHold : MonoBehaviour
             Debug.DrawLine(PlayerCamera.transform.position, PlayerCamera.transform.position + PlayerCamera.transform.forward * 5f, Color.red, 1f);
             foreach (var hit in hitInfo)
             {
-                Debug.Log(hit.transform.gameObject.name);
+
                 if (hit.transform.gameObject.GetComponent<Scr_Item>() != null)
                 {
                     HeldObject = hit.transform.gameObject.GetComponent<Scr_Item>().gameObject;
@@ -106,7 +106,7 @@ public class Scr_PlayerHold : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Object hit but no item: " + hit.transform.gameObject.name);
+
                 }
             }
 
