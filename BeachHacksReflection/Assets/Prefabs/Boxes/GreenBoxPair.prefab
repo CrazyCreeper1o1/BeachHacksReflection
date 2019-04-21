@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4887078548246874231}
   - component: {fileID: 6276114938999528744}
   - component: {fileID: 340985038899535198}
-  m_Layer: 13
+  m_Layer: 18
   m_Name: GhostGreenBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
