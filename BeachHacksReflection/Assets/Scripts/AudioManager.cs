@@ -12,7 +12,7 @@ public class Sound
 
     [Range(0f, 1f)]
     public float volume = 0.7f;
-    [Range(0.5f, 2f)]
+    [Range(0f, 2f)]
     public float pitch = 1f;
     [Range(0f, 0.5f)]
     public float randomVolume = 0.1f;
