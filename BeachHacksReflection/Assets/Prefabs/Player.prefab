@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 1237843857564441506}
   - component: {fileID: 2441964355396313584}
   - component: {fileID: 4545462869042807571}
+  - component: {fileID: 1076813625}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -385,7 +386,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.85
+  m_Radius: 0.52
   m_SlopeLimit: 35
   m_StepOffset: 0.3
   m_SkinWidth: 0.12
@@ -450,6 +451,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98af0f33adfbfff41b43ac4033a33aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1076813625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291963017584681892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89f910497e8ff546ad403a3d93567f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localFade: {fileID: 5588232647272018508}
 --- !u!1001 &2051867169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,3 +539,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2051867169}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5588232647272018508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5588232648174514285, guid: 95e8bbd83d783564a80b4beddcb9f73d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2051867169}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cd8ca2d88251545b1d94146cbe3c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
