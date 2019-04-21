@@ -14,6 +14,9 @@ public class Scr_PlayerHold : MonoBehaviour
     public float HoldDistanceMin = 1f;
     public float HoldDistanceMax = 3f;
 
+    public float HoldStrength=10f;
+    public float HoldElasticity=1f;
+
     private void Start()
     {
         PlayerCamera = transform.GetComponentInChildren<Camera>();
@@ -52,9 +55,16 @@ public class Scr_PlayerHold : MonoBehaviour
             var rb = HeldObject.GetComponent<Rigidbody>();
             if (rb)
             {
-                rb.velocity = Vector3.zero;
+                Vector3 direction = ((PlayerCamera.transform.position + (PlayerCamera.transform.forward * HoldDistance)) - HeldObject.transform.position);
+                if (direction.magnitude > HoldElasticity)
+                {
+                    Release();
+                    return;
+                }
+
+                rb.velocity = direction*HoldStrength*rb.mass;
                 rb.angularVelocity = Vector3.zero;
-                rb.MovePosition(PlayerCamera.transform.position + (PlayerCamera.transform.forward * HoldDistance));
+                //rb.MovePosition(PlayerCamera.transform.position + (PlayerCamera.transform.forward * HoldDistance));
                 rb.MoveRotation(PlayerCamera.transform.rotation * Quaternion.Euler(270, 90, 0));
             }
 
@@ -85,6 +95,8 @@ public class Scr_PlayerHold : MonoBehaviour
                 {
                     HeldObject = hit.transform.gameObject.GetComponent<Scr_Item>().gameObject;
                     ObjectHeld = true;
+
+                    HoldDistance = Mathf.Clamp((HeldObject.transform.position-PlayerCamera.transform.position).magnitude + (Input.mouseScrollDelta.y * ScrollScale), HoldDistanceMin, HoldDistanceMax);
 
                     var rb = HeldObject.GetComponent<Rigidbody>();
                     if(rb)
