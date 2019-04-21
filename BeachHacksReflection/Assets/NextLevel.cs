@@ -8,7 +8,7 @@ public class NextLevel : MonoBehaviour
 //<<<<<<< HEAD
     public string TargetLevel="1";
 //=======
-    public int TargetLevel=1;
+    //public int TargetLevel=1;
     public string NextScene;
 //>>>>>>> ad06adb5b6f44395823942ed09854b79ca676f00
     private void OnTriggerEnter(Collider other)

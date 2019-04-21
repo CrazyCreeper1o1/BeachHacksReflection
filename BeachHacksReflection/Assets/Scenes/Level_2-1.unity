@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3708de96acfc5f54d860c4135b118681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetLevel: 2-2
+  TargetLevel: Level_2-2
   localFade: {fileID: 0}
 --- !u!65 &627568503
 BoxCollider:
