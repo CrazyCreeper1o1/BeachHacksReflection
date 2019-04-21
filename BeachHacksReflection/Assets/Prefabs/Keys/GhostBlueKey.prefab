@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7839743789905454987}
   - component: {fileID: 4930683260031985699}
   - component: {fileID: 1678102829556481269}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 830925743360273065}
   - component: {fileID: 8752706875484767805}
   - component: {fileID: 3102371095615870496}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 8442282166403805541}
   - component: {fileID: 1334253294736990094}
   - component: {fileID: 4521565696412300720}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 6516854065707904380}
   - component: {fileID: 8465771435718830672}
   - component: {fileID: 4076843112961973816}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 5011603975762786367}
   - component: {fileID: 8347301631017110050}
   - component: {fileID: 8347301631017110061}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: GhostBlueKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
