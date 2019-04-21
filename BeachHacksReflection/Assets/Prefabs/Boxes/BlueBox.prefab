@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 681897731625622087}
   - component: {fileID: 2815900333456887256}
   - component: {fileID: 6545074966448183857}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BlueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

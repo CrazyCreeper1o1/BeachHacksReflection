@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 4371509716281970578}
   - component: {fileID: 4371509716281970581}
   - component: {fileID: 4371509716281970583}
-  m_Layer: 14
+  m_Layer: 19
   m_Name: GhostBlueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
