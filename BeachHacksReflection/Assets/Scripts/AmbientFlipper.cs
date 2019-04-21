@@ -12,7 +12,7 @@ public class AmbientFlipper : MonoBehaviour
     void Start()
     {
         am = GetComponent<AudioManager>();
-        speedMultiplier = 0.5f;
+        speedMultiplier = 1f;
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class AmbientFlipper : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         currentTime = (120 - currentTime);
-        speedMultiplier = 0.4f;
+        speedMultiplier = 0.8f;
         //Debug.Log("Time: " + currentTime);
         am.StopSound("Ambient");
         am.PlaySound("AmbientReverse", currentTime);
@@ -35,7 +35,7 @@ public class AmbientFlipper : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         currentTime = (120 - currentTime);
-        speedMultiplier = 0.5f;
+        speedMultiplier = 1f;
         //Debug.Log("Time: " + currentTime);
         am.StopSound("AmbientReverse");
         am.PlaySound("Ambient", currentTime);
