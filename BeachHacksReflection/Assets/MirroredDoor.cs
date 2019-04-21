@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MirroredDoor : MonoBehaviour
 {
 
@@ -13,13 +14,21 @@ public class MirroredDoor : MonoBehaviour
 
     private void Update()
     {
-        if (!SonLock.Locked || !ParentLock)
+        Debug.Log("udpate");
+        if ((SonLock.Locked==false) || (ParentLock.Locked==false))
         {
-            SonLock.Locked = false;
-            ParentLock.Locked = false;
-        }
+            Debug.Log("Unlock?");
+            SonLock.UnlockLock();
+            ParentLock.UnlockLock();
 
-  //      SonDoor.Locked = ParentDoor.Locked;
-//        SonLock.Locked = ParentLock.Locked;
+            UnlockDoors();
+           // TimerManager.main.AddTask(UnlockDoors, 1);
+        }
+    }
+    public void UnlockDoors()
+    {
+        Debug.Log("UnlockDoors():=");
+        ParentDoor.Unlock();
+        SonDoor.Unlock();
     }
 }

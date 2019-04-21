@@ -14,13 +14,11 @@ namespace Doors
         }
 
         // Update is called once per frame
-        void Update()
+        public void Unlock()
         {
-            if (!Locked)
-            {
-                GetComponent<Animator>().SetBool("Locked",Locked);
-                GetComponent<Collider>().enabled = Locked;
-            }
+            Locked = false;
+            GetComponent<Animator>().SetBool("Locked", false);
+            GetComponent<Collider>().enabled = false;
         }
 
         

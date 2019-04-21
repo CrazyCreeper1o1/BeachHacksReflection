@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 8953539730845639954}
   - component: {fileID: 8953539730845640045}
   - component: {fileID: 1108081104057895492}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c449c94d139fa9740baafd74636cc4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Locked: 1
 --- !u!1 &1108081104661906796
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +229,7 @@ GameObject:
   - component: {fileID: 3053599681202457485}
   - component: {fileID: 7389980546626282600}
   - component: {fileID: 1721811475477837041}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Torus.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +614,7 @@ GameObject:
   - component: {fileID: 693028336334336268}
   - component: {fileID: 7940720470642434023}
   - component: {fileID: 4758325085035492825}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +999,7 @@ GameObject:
   - component: {fileID: 1570817467769684024}
   - component: {fileID: 1098047500650993782}
   - component: {fileID: 156705166646881736}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2036,7 +2037,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1a3c82ddb1fb0ce4e9b36fdaf73dde9e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -2079,7 +2080,7 @@ GameObject:
   - component: {fileID: 8953539730817982355}
   - component: {fileID: 8953539730817982445}
   - component: {fileID: 8953539730817982354}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2188,7 +2189,7 @@ GameObject:
   - component: {fileID: 8953539731497114819}
   - component: {fileID: 8953539731497114845}
   - component: {fileID: 8953539731497114818}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Torus.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2267,7 @@ GameObject:
   - component: {fileID: 8953539731556770013}
   - component: {fileID: 8953539731556769986}
   - component: {fileID: 8953539731556769987}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2331,6 +2332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c449c94d139fa9740baafd74636cc4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Locked: 1
 --- !u!1 &8953539731926506214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,7 +2381,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 4ae0d6f486ea8334e842e86d4860b87c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -2422,7 +2424,7 @@ GameObject:
   - component: {fileID: 8953539732001404166}
   - component: {fileID: 8953539732001404160}
   - component: {fileID: 8953539732001404161}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,7 +2514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8953539732433986705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 0.6, z: 3.4}
+  m_LocalPosition: {x: -7.5, y: 0.6, z: 0.65}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 8953539730813747048}

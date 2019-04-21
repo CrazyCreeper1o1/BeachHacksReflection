@@ -5,51 +5,57 @@ namespace Doors
 {
     public class Lock : MonoBehaviour
     {
-        private bool locked=true;
-        public bool Locked
-        {
-            get
-            {
-                return locked;
-            }
-            set
-            {
-                locked = value;
-                if (!locked)
-                {
-                    UnlockLock();
-                    UnlockDoor();
-                }
-            }
-        }
+        public bool Locked=true;
 
         private void OnCollisionEnter(Collision collision)
         {
-            Scr_Item ItemScript = collision.collider.gameObject.GetComponent<Scr_Item>();
-            if (ItemScript != null)
+            if (!Locked) { return; }
+
+
+
+            if (IsGhost(collision.gameObject.layer) == IsGhost(gameObject.layer))
             {
-                if (ItemScript.ItemID == Scr_Item.ItemList.Key)
+
+
+                Scr_Item ItemScript = collision.collider.gameObject.GetComponent<Scr_Item>();
+                if (ItemScript != null)
                 {
-                    UnlockLock();
-
-                    Destroy(ItemScript.gameObject);
-
-                    TimerManager.main.AddTask(UnlockDoor, 1);
+                    if (ItemScript.ItemID == Scr_Item.ItemList.Key)
+                    {
+                        Destroy(ItemScript.gameObject);
+                        UnlockLock();
+                    }
                 }
             }
         }
         public void UnlockLock()
         {
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            GetComponent<Rigidbody>().isKinematic = false;
             GetComponent<Rigidbody>().velocity = transform.forward * 5;
 
-            locked = false;
+            Locked = false;
         }
-        public void UnlockDoor()
+
+        public bool IsGhost(LayerMask _layer)
         {
-            transform.parent.GetComponentInChildren<Door>().Locked = false;
+            if (_layer == 14)
+            {
+                return true;
+            }
+            if (_layer == 16)
+            {
+                return true;
+            }
+            if (_layer == 18)
+            {
+                return true;
+            }
+            if (_layer == 19)
+            {
+                return true;
+            }
+            return false;
         }
     }
-
-
 }
