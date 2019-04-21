@@ -19,6 +19,8 @@ public class Sound
     [Range(0f, 0.5f)]
     public float randomPitch = 0.1f;
     public bool isLooped;
+    
+
 
     private AudioSource source;
 
@@ -34,6 +36,24 @@ public class Sound
         source.pitch = pitch * (1 + Random.Range(-randomPitch / 2f, randomPitch / 2f)); ;
         source.loop = isLooped;
         source.Play();
+    }
+    public void Stop()
+    {
+        source.Stop();
+    }
+
+    public void PlayScheduled(double time)
+    {
+        source.volume = volume * (1 + Random.Range(-randomVolume / 2f, randomVolume / 2f));
+        source.pitch = pitch * (1 + Random.Range(-randomPitch / 2f, randomPitch / 2f)); ;
+        source.loop = isLooped;
+        while (time < 0)
+            time += 120;
+        source.time = (int) (time % 120);
+        source.Play();
+        Debug.Log(source.time);
+        //source.PlayScheduled(AudioSettings.dspTime - time);
+        //Debug.Log("It's playing here at " + (time));
     }
 }
 
@@ -81,5 +101,31 @@ public class AudioManager : MonoBehaviour
         Debug.LogWarning("AudioManager: Sound not found in list: " + _name);
     }
 
+    public void StopSound(string _name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (sounds[i].name == _name)
+            {
+                sounds[i].Stop();
+                return;
+            }
+        }
 
+        Debug.LogWarning("AudioManager: Sound not found in list: " + _name);
+    }
+
+    public void PlaySound(string _name, double startTime)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (sounds[i].name == _name)
+            {
+                sounds[i].PlayScheduled(startTime);
+                return;
+            }
+        }
+
+        Debug.LogWarning("AudioManager: Sound not found in list: " + _name);
+    }
 }
