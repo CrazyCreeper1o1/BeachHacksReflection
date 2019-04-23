@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 2033917843}
   - component: {fileID: 2033917842}
   - component: {fileID: 2033917841}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

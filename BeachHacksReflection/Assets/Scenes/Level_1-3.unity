@@ -2851,11 +2851,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2011931597539377616, guid: ac350fcaa130ef24a9fef86c0235cfac,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2736574765177299039, guid: ac350fcaa130ef24a9fef86c0235cfac,
         type: 3}
       propertyPath: Object1
@@ -2866,6 +2861,11 @@ PrefabInstance:
       propertyPath: Object2
       value: 
       objectReference: {fileID: 1578970244}
+    - target: {fileID: 2011931597539377616, guid: ac350fcaa130ef24a9fef86c0235cfac,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2736574764742871159, guid: ac350fcaa130ef24a9fef86c0235cfac,
         type: 3}
       propertyPath: m_IsKinematic
@@ -3235,7 +3235,7 @@ GameObject:
   - component: {fileID: 1772585602}
   - component: {fileID: 1772585601}
   - component: {fileID: 1772585600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
